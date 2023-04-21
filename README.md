@@ -6,16 +6,12 @@ This repository contains an Android app and a pipeline.yml file that automates t
 
 Before getting started, you will need to:
 
-- Have a GitHub repository with an Android app that you want to build and deploy to Visual Studio App Center.
-- Create an account on Visual Studio App Center and create an app.
-- Obtain an API token from Visual Studio App Center. You will need this later to configure the pipeline.
+Our script could:
 
-## Creating the pipeline.yml file
-
-1. Navigate to the root directory of your GitHub repository.
-
-2. Create a `.github/workflows` directory if it doesn't already exist.
-
-3. Create a new file in the `.github/workflows` directory called `pipeline.yml`.
-
-4. Open the `pipeline.yml` file and paste
+Run lint checks on the project code.
+Run Static Code Analysers on the project code.
+Run Unit Tests , Instrumental Tests on the project code.
+Generate and Publish Reports of actions.
+Compile the project code to ensure the proper working of code.
+Generate Artifacts ( .AAR , .APK files)
+Publish the Artifacts to their respective marketplace, like mavenCentral for library builds or Play Store for APK builds.
